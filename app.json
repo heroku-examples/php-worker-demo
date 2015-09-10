@@ -1,0 +1,11 @@
+{
+    "name": "PHP Background Worker Demo",
+    "description": "An application showing how to use RabbitMQ to handle background jobs using worker processes in PHP on Heroku.",
+    "keywords": ["rabbitmq", "queue", "worker", "queues", "php", "demo", "example", "background", "processing"],
+    "repository": "https://github.com/heroku-examples/php-worker-demo",
+    "addons": [
+        "heroku-redis",
+        "cloudamqp",
+        "bomberman"
+    ]
+}
