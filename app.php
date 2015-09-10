@@ -7,6 +7,7 @@ $app = new Silex\Application();
 // set up Monolog to log to stderr
 $app->register(new Silex\Provider\MonologServiceProvider(), [
     'monolog.logfile' => 'php://stderr',
+    'monolog.level' => constant('Monolog\\Logger::'.strtoupper(getenv('LOG_LEVEL')?:'NOTICE')),
 ]);
 
 // RabbitMQ connection
